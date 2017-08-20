@@ -11,6 +11,12 @@ Start the container :
 docker run -p 8888:8888 -p 8111:8111 sipf/config-service
 ```
 
+or
+
+```
+docker-compose up -d
+```
+
 You can the, log to [http://127.0.0.1:8888](http://127.0.0.1:8888) to use the service or 
 [http://127.0.0.1:8111](http://127.0.0.1:8111) for management. The credential will be 
 ```supervisor/supervisor```.
