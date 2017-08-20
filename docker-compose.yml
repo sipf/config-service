@@ -1,0 +1,15 @@
+version: '3'
+services:
+  config:
+    image: sipf/config-service:0.1.0
+    ports:
+      - "8888:8888"
+      - "8111:8111"
+    networks:
+      springcloud-overlay:
+        aliases:
+          - config
+networks:
+  springcloud-overlay:
+    external:
+      name: springcloud-overlay
