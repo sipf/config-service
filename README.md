@@ -11,9 +11,10 @@ Start the container :
 docker run -p 8888:8888 -p 8111:8111 sipf/config-service
 ```
 
-or
+or clone this repository and :
 
 ```
+docker network create springcloud-overlay
 docker-compose up -d
 ```
 
