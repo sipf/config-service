@@ -18,7 +18,7 @@ docker network create springcloud-overlay
 docker-compose up -d
 ```
 
-You can the, log to [http://127.0.0.1:8888](http://127.0.0.1:8888) to use the service or 
+You can then log to [http://127.0.0.1:8888](http://127.0.0.1:8888) to use the service or 
 [http://127.0.0.1:8111](http://127.0.0.1:8111) for management. The credential will be 
 ```supervisor/supervisor```.
 
