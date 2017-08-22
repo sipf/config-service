@@ -5,7 +5,7 @@ RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package -DskipTests
 
 FROM java:8-jdk-alpine
 RUN apk update && \
-    apk add ca-certificates openssl && \
+    apk add ca-certificates openssl curl && \
     rm -rf /var/cache/apk/*
 
 WORKDIR /usr/lib/jvm/java-1.8-openjdk/jre/lib/security/
