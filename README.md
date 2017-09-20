@@ -22,6 +22,13 @@ You can then log to [http://127.0.0.1:8888](http://127.0.0.1:8888) to use the se
 [http://127.0.0.1:8111](http://127.0.0.1:8111) for management. The credential will be 
 ```supervisor/supervisor```.
 
+Your can review the config service with curl on heroku :
+
+
+```
+curl -u supervisor:supervisor https://config-service-ws.herokuapp.com/organism/development
+```
+
 ### Default Configuration
 
 ```
