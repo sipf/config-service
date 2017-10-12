@@ -4,7 +4,6 @@ services:
     image: sipf/config-service
     ports:
       - "8888:8888"
-      - "8111:8111"
     networks:
       springcloud-overlay:
         aliases:

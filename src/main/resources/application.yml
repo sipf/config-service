@@ -9,12 +9,8 @@ server:
   port: 8888
 security:
   user:
-    name: supervisor
-    password: supervisor
-management:
-  security:
-    roles: SUPERVISOR
-  port: 8111
+    name: admin
+    password: password
 encrypt:
   key-store:
     location: classpath:keystore.jks
