@@ -1,0 +1,20 @@
+dist: trusty
+sudo: required
+
+addons:
+  sonarcloud:
+    organization: "sipf-github"
+    token:
+      secure: "lVh+Ir5SSMX9k3kgDNhYfbr7tDNCerC8gMxrC5k+e5ZNT2v32aVI95SGMe/uK45qDUvvmzaHIDM+b6mfGs5w1NqOtTnYthbUB+eviAylTRZCvhK6cgNrypwq3WtEM8nuqd+qY7G9ZJ4VKzEhvo+we+FAhoJLrRoFCTx62BTsgl5EE5DcYjcQbuNlTua0J6xMP5/ldLs4HpGU3UogEbmVVW4pl9rnaMolFWPU9zJ7hxGZLZ05cZt3S0PVzOgMeiTYkI0ySL9ehQmzKv06UYeFRFEKdTXMgWm4ygTH4B2JBd8rEQYtysGaBzsfNexyXXBPjVSemGKIkCEDTdOX3cpqoZy2Xu9HdXxkhw55egh82ViQyxgPMSVPKnD3y2tDYNC3Aqa4MyXqxOwH81fwlRtiy3ALyX67vsien0QspiTFrEFQNwJgvi7c3geLAZjVeH2FyrnZjWAdSj6dpV86d2cdPwB718XhQqnMJetgRE8nLh3teDhGQvFLusgoZQ1kAAjPZXJyDJUxhB0hEroEAwtEAwg/rYCT+d7wzLJ3zrr9tDwx2UI374SsJHXy016K5t4JJkU0bBjqngJGzmYRLI8clA1Uf/OGzEhSwuQ5jNb0ebbkzoTPADpPOmoFvFztbqTqsk9hDuBvLYEB/2WCEfqlgoWujGgWZniNxQWXPXDfa0E="
+
+
+jdk:
+ - oraclejdk8
+
+script:
+  - mvn package
+  - sonar-scanner
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
